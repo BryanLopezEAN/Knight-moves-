@@ -7,24 +7,21 @@ package knightmoves;
 
 /**
  *
- * @author Lopez Avila
+ * @author Bryan Lopez Avila
  */
 public class Position {
+
     public int x;
     public int y;
     public int depth;
 
     Position(int x, int y, int depth) {
-            this.x = x;
-            this.y = y;
-            this.depth = depth;
+        this.x = x;
+        this.y = y;
+        this.depth = depth;
     }
 
     public boolean equals(Position that) {
-            return this.x == that.x && this.y == that.y;
-    }
-
-    public String toString() {
-            return "("+this.x + " " + this.y+ " " + this.depth +")";
+        return this.x == that.x && this.y == that.y;
     }
 }
